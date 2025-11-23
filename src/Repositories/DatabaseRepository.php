@@ -1,9 +1,9 @@
 <?php
 
-namespace Gangon\Otp\Repositories;
+namespace Yossivic\Otp\Repositories;
 
-use Gangon\Otp\Contracts\OtpRepositoryInterface;
-use Gangon\Otp\Models\Otp as Model;
+use Yossivic\Otp\Contracts\OtpRepositoryInterface;
+use Yossivic\Otp\Models\Otp as Model;
 use Carbon\Carbon;
 
 class DatabaseRepository implements OtpRepositoryInterface

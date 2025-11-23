@@ -1,6 +1,6 @@
 <?php
 
-namespace Gangon\Otp\Contracts;
+namespace Yossivic\Otp\Contracts;
 
 interface OtpRepositoryInterface
 {

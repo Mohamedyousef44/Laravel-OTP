@@ -1,6 +1,6 @@
 <?php
 
-namespace Gangon\Otp\Models;
+namespace Yossivic\Otp\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;

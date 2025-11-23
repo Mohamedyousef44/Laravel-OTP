@@ -1,8 +1,8 @@
 <?php
 
-namespace Gangon\Otp\Services;
+namespace Yossivic\Otp\Services;
 
-use Gangon\Otp\Contracts\OtpRepositoryInterface;
+use Yossivic\Otp\Contracts\OtpRepositoryInterface;
 use Carbon\Carbon;
 
 class OtpService

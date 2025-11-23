@@ -1,11 +1,11 @@
 <?php
 
-namespace Ganagon\Otp\Providers;
+namespace Yossivic\Otp\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Ganagon\Otp\Services\OtpService;
-use Ganagon\Otp\Contracts\OtpRepositoryInterface;
-use Ganagon\Otp\Repositories\CacheRepository;
+use Yossivic\Otp\Services\OtpService;
+use Yossivic\Otp\Contracts\OtpRepositoryInterface;
+use Yossivic\Otp\Repositories\CacheRepository;
 
 class OtpServiceProvider extends ServiceProvider
 {

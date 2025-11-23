@@ -1,8 +1,8 @@
 <?php
 
-namespace Gangon\Otp\Repositories;
+namespace Yossivic\Otp\Repositories;
 
-use Gangon\Otp\Contracts\OtpRepositoryInterface;
+use Yossivic\Otp\Contracts\OtpRepositoryInterface;
 use Illuminate\Support\Facades\Cache;
 use Carbon\Carbon;
 
