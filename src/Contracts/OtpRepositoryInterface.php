@@ -9,4 +9,5 @@ interface OtpRepositoryInterface
     public function delete(string $key): void;
     public function incrementAttempts(string $key): void;
     public function getAttempts(string $key): int;
+    public function getRecord(string $key): ?array;
 }
