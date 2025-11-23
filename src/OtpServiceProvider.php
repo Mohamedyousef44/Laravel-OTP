@@ -1,6 +1,6 @@
 <?php
 
-namespace Yossivic\Otp\Providers;
+namespace Yossivic\Otp;
 
 use Illuminate\Support\ServiceProvider;
 use Yossivic\Otp\Services\OtpService;
