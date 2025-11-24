@@ -15,7 +15,7 @@ class CacheRepository implements OtpRepositoryInterface
     {
         $data = [
             'otp_hash' => $hash,
-            'attempts' => 0,
+            'attempts' => 1,
             'expires_at' => Carbon::now()->addMinutes($expiry),
         ];
 
@@ -67,6 +67,6 @@ class CacheRepository implements OtpRepositoryInterface
     public function getAttempts(string $key): int
     {
         $record = Cache::get($key);
-        return $record['attempts'] ?? 0;
+        return $record['attempts'] ?? 1;
     }
 }
