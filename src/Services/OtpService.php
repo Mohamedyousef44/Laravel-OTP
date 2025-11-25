@@ -28,7 +28,7 @@ class OtpService
         if (!$record) {
             return [
                 'valid' => false,
-                'message' => 'OTP not found or expired.',
+                'message' => $this->config["messages"]['not_found'],
             ];
         }
 
@@ -37,7 +37,7 @@ class OtpService
             $repo->delete($key);
             return [
                 'valid' => false,
-                'message' => 'OTP has expired.',
+                'message' => $this->config["messages"]['expired'],
             ];
         }
 
@@ -45,7 +45,7 @@ class OtpService
         if ($record['attempts'] > $this->config['max_attempts']) {
             return [
                 'valid' => false,
-                'message' => 'Maximum validation attempts reached.',
+                'message' => $this->config["messages"]['max_attempts'],
             ];
         }
 
@@ -55,7 +55,7 @@ class OtpService
             $repo->delete($key);
             return [
                 'valid' => true,
-                'message' => 'OTP is valid.',
+                'message' => $this->config["messages"]['valid'],
             ];
         }
 
@@ -64,7 +64,7 @@ class OtpService
 
         return [
             'valid' => false,
-            'message' => 'OTP is invalid.',
+            'message' => $this->config["messages"]['invalid'],
         ];
     }
 
